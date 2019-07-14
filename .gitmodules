@@ -1,0 +1,6 @@
+[submodule "laradock_inspired_rails_tutorial"]
+	path = laradock_inspired_rails_tutorial
+	url = https://github.com/Laradock/laradock.git
+[submodule "laradock_inspired_by_rails"]
+	path = laradock_inspired_by_rails
+	url = https://github.com/Laradock/laradock.git
