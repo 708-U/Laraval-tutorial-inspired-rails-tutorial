@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::redirect('/', '/home');
+
+Route::namespace('statics')->group(function () {
+    Route::get('/about', 'StaticPageController@about');
+    Route::get('/home', 'StaticPageController@home');
+    Route::get('/help', 'StaticPageController@help');
+    Route::get('/content', 'StaticPageController@content');
 });
