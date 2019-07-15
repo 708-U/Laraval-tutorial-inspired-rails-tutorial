@@ -3,11 +3,11 @@
   <div class="container">
     <a href="{{ route('home') }}" id='logo'>Sample App</a>
     <nav>
-        <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ route('about') }}">About</a></li>
-        <li><a href="{{ route('help') }}">Help</a></li>
-        <li><a href="#">Log in</a></li>
-        </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a dusk="about_link" href="{{ route('about') }}">About</a></li>
+      <li><a dusk="help_link" href="{{ route('help') }}">Help</a></li>
+      <li><a dusk="login_link" href="#">Log in</a></li>
+      </ul>
     </nav>
   </div>
 </header>
