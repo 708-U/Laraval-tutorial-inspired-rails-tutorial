@@ -14,8 +14,8 @@
 Route::redirect('/', '/home');
 
 Route::namespace('statics')->group(function () {
-    Route::get('/about', 'StaticPageController@about');
-    Route::get('/home', 'StaticPageController@home');
-    Route::get('/help', 'StaticPageController@help');
-    Route::get('/content', 'StaticPageController@content');
+    Route::get('/about', 'StaticPageController@about')->name('about');
+    Route::get('/home', 'StaticPageController@home')->name('home');
+    Route::get('/help', 'StaticPageController@help')->name('help');
+    Route::get('/content', 'StaticPageController@content')->name('contact');
 });
