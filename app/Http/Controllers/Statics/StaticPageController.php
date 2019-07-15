@@ -22,8 +22,8 @@ class StaticPageController extends Controller
         return view('statics.about');
     }
 
-    public function content()
+    public function contact()
     {
-        return view('statics.content');
+        return view('statics.contact');
     }
 }

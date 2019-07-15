@@ -73,11 +73,11 @@ class StaticControllerTest extends TestCase
      *
      * @return void
      */
-    public function shouldGetContent()
+    public function shouldGetContact()
     {
-        $response = $this->get('/content');
+        $response = $this->get('/contact');
 
         $response->assertOk()
-            ->assertSee('Content ' . $this->expected_title);
+            ->assertSee('Contact ' . $this->expected_title);
     }
 }

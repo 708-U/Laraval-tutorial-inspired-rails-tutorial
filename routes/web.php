@@ -17,5 +17,5 @@ Route::namespace('statics')->group(function () {
     Route::get('/about', 'StaticPageController@about')->name('about');
     Route::get('/home', 'StaticPageController@home')->name('home');
     Route::get('/help', 'StaticPageController@help')->name('help');
-    Route::get('/content', 'StaticPageController@content')->name('contact');
+    Route::get('/contact', 'StaticPageController@contact')->name('contact');
 });
