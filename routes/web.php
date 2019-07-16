@@ -13,9 +13,13 @@
 
 Route::redirect('/', '/home');
 
+/** Static Pages */
 Route::namespace('statics')->group(function () {
     Route::get('/about', 'StaticPageController@about')->name('about');
     Route::get('/home', 'StaticPageController@home')->name('home');
     Route::get('/help', 'StaticPageController@help')->name('help');
     Route::get('/contact', 'StaticPageController@contact')->name('contact');
 });
+
+/** Users */
+Route::get('/signup', 'UserController@new')->name('signup');
